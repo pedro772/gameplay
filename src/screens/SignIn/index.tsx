@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from 'react';
 import { View, Text, Image, StatusBar } from 'react-native';
 
 import { ButtonIcon } from '../../components/ButtonIcon';
@@ -6,8 +6,6 @@ import IllustrationImg from '../../assets/illustration.png';
 import { styles } from './styles';
 
 export function SignIn() {
-  const [text, setText] = useState("");
-
   return (
     <View style={ styles.container }>
       <StatusBar
