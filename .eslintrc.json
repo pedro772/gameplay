@@ -24,6 +24,13 @@
         "semi": ["warn", "always"],
         "quotes": ["warn", "single"],
         "indent": ["warn", 2],
-        "no-multi-spaces": ["error"]
+        "no-multi-spaces": ["error"],
+        "object-curly-spacing": ["warn", "always"],
+        "react/jsx-curly-spacing": ["warn", {
+            "when": "always",
+            "children": {
+                "when": "always"
+              }
+          }]
     }
 }
