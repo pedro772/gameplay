@@ -5,6 +5,8 @@ import { Home } from '../screens/Home';
 import { SignIn } from '../screens/SignIn';
 import { Background } from '../components/Background';
 
+import { theme } from '../global/styles/theme';
+
 const { Navigator, Screen } = createStackNavigator();
 
 export function AuthRoutes() {
@@ -13,7 +15,7 @@ export function AuthRoutes() {
       screenOptions={ {
         headerShown: false,
         cardStyle: {
-          backgroundColor: 'transparent',
+          backgroundColor: theme.colors.secondary100,
         },
         cardOverlayEnabled: true,
         cardOverlay: () => (
